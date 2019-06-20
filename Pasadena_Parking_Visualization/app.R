@@ -62,26 +62,28 @@ others = others[others != 1 & others != 2 & others != 3 & others != 6]
 ui <- navbarPage(
   title = "Parking Violations in Pasadena, CA",
 
-  
-  # Show some plots
-  tabPanel("Plots", 
-           plotOutput(outputId = "Week"),
-           plotOutput(outputId = "Day")
-  ),
-  
-  # Plot all the data on a map
-  tabPanel("Simple Map",
-           leafletOutput("SimpleMap")
-  ),
-  
-  # Create a cluster map
-  tabPanel("Cluster Map",
-           leafletOutput("ClusterMap")
-  ),
-  
-  # Create an interactive map - select by code
-  tabPanel("Map By Ticket",
-           leafletOutput("IntMap")
+  tabsetPanel(type = "tabs",
+              # Plot all the data on a map
+              tabPanel("Simple Map",
+                       leafletOutput("SimpleMap")
+              ),
+              
+              # Create a cluster map
+              tabPanel("Cluster Map",
+                       leafletOutput("ClusterMap")
+              ),
+              
+              # Create an interactive map - select by code
+              tabPanel("Map By Ticket",
+                       leafletOutput("IntMap")
+              ),
+                       
+              # Show some plots
+              tabPanel("Plots",
+                       plotOutput(outputId = "Week"),
+                       plotOutput(outputId = "Day")
+              )
+  )
 
            
            # # Add checkboxes
@@ -91,7 +93,6 @@ ui <- navbarPage(
            #                                   "Overtime Parking" = 3,
            #                                   "Restricted" = 6, 
            #                                   "Other" = 0))
-  )
 )
 
 

@@ -1,9 +1,12 @@
 name: Pasadena_Parking_Visualization
+title: Pasadena_Parking_Visualization
+username:
 account: hannah-walsh
 server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
 appId: 105962
-bundleId: 469034
+bundleId: 2167408
 url: https://hannah-walsh.shinyapps.io/Pasadena_Parking_Visualization/
-when: 1464836117.15593
+when: 1561059098.27099
 asMultiple: FALSE
 asStatic: FALSE
