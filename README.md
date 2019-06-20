@@ -3,4 +3,5 @@ This is a project done for a Business Analytics class my senior year of undergra
 We were given parking violations for the city of Pasadena, CA (where Caltech is) and asked to give some insights.
 The goal was to reduce the number of parking violations.
 
+The code for the shiny app is Pasadena_Parking_Visualization/app.R  
 To see the shiny app easily, go to https://hannah-walsh.shinyapps.io/Pasadena_Parking_Visualization/
